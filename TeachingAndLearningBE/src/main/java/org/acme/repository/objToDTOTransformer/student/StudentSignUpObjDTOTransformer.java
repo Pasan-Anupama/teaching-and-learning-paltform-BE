@@ -1,3 +1,13 @@
+/**
+ * StudentSignUpObjDTOTransformer.java
+ *
+ * Jan 20, 2025
+ *
+ * Version: 1.0.1
+ *
+ * Copyright(c) T & L Agency Pvt Ltd. All Rights Reserved.
+ * This software is the proprietary information of T & L Agency Pvt Ltd.
+ */
 package org.acme.repository.objToDTOTransformer.student;
 
 import org.acme.common.dto.student.StudentSignUpDetailsDTO;
@@ -5,16 +15,17 @@ import org.acme.repository.entities.student.StudentSignUp;
 
 /**
  * The transformer class use to transform data between StudentSignUp entity and
- * StudentSignUpDtailsDTO 
+ * StudentSignUpDtailsDTO
  * 
  * @author Pasan
  */
 public class StudentSignUpObjDTOTransformer {
-    
+
     /**
      * Converts a StudentSignUpDTO into StudentSignUp entity
-     *  
-     * @param signUpDetailsDTO The data transfer object containing student signUp details
+     * 
+     * @param signUpDetailsDTO The data transfer object containing student signUp
+     *                         details
      * @return StudentSignUp entity
      */
     public static StudentSignUp dtoToEntityTransform(StudentSignUpDetailsDTO signUpDetailsDTO) {
@@ -41,7 +52,7 @@ public class StudentSignUpObjDTOTransformer {
      * @param studentEntity The Entity class that neds to be convberted
      * @return an instance of StudentSignUpDetailsDTO
      */
-    public static StudentSignUpDetailsDTO entityToDTOTransform(StudentSignUp studentEntity){
+    public static StudentSignUpDetailsDTO entityToDTOTransform(StudentSignUp studentEntity) {
         StudentSignUpDetailsDTO studentSignUpDetailsDTO = new StudentSignUpDetailsDTO();
 
         studentSignUpDetailsDTO.setId(studentEntity.getId());
@@ -56,6 +67,6 @@ public class StudentSignUpObjDTOTransformer {
         studentSignUpDetailsDTO.setOlSecondCategory(studentEntity.getOlSecondCategory());
         studentSignUpDetailsDTO.setOlThirdCategory(studentEntity.getOlThirdCategory());
 
-        return studentSignUpDetailsDTO ;
+        return studentSignUpDetailsDTO;
     }
 }

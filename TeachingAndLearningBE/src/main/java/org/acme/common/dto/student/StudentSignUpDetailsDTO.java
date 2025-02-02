@@ -35,12 +35,12 @@ public class StudentSignUpDetailsDTO {
     private String educationLevel;
 
     private String alStream;
-    
+
     private String olFirstCategory;
 
     private String olSecondCategory;
 
     private String olThirdCategory;
 
-    //Add suitable data for S3 key
+    // Add suitable data for S3 key
 }
