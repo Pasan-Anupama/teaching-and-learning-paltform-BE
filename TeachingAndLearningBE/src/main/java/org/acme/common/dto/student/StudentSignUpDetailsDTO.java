@@ -42,5 +42,7 @@ public class StudentSignUpDetailsDTO {
 
     private String olThirdCategory;
 
+    private String password;
+
     // Add suitable data for S3 key
 }

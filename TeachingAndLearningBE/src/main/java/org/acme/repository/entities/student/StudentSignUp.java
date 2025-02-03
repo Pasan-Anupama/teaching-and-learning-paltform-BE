@@ -56,5 +56,7 @@ public class StudentSignUp {
     @Column(name = "ol_third_category")
     private String olThirdCategory;
 
+    @Column(name = "password")
+    private String password;
     // Add suitable column for S3 key for the uploaded documents
 }
