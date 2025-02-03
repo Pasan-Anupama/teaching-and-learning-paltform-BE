@@ -20,7 +20,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "student_sign_up")
 public class StudentSignUp {
-    
+
     @Id
     @GeneratedValue
     @Column(name = "id")
@@ -56,5 +56,5 @@ public class StudentSignUp {
     @Column(name = "ol_third_category")
     private String olThirdCategory;
 
-    //Add suitable column for S3 key for the uploaded documents
+    // Add suitable column for S3 key for the uploaded documents
 }
