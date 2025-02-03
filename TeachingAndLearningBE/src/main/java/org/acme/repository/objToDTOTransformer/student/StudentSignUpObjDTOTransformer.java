@@ -42,6 +42,7 @@ public class StudentSignUpObjDTOTransformer {
         studentEntity.setOlFirstCategory(signUpDetailsDTO.getOlFirstCategory());
         studentEntity.setOlSecondCategory(signUpDetailsDTO.getOlSecondCategory());
         studentEntity.setOlThirdCategory(signUpDetailsDTO.getOlThirdCategory());
+        studentEntity.setPassword(signUpDetailsDTO.getPassword());
 
         return studentEntity;
     }
@@ -66,6 +67,7 @@ public class StudentSignUpObjDTOTransformer {
         studentSignUpDetailsDTO.setOlFirstCategory(studentEntity.getOlFirstCategory());
         studentSignUpDetailsDTO.setOlSecondCategory(studentEntity.getOlSecondCategory());
         studentSignUpDetailsDTO.setOlThirdCategory(studentEntity.getOlThirdCategory());
+        studentSignUpDetailsDTO.setPassword(studentEntity.getPassword());
 
         return studentSignUpDetailsDTO;
     }
