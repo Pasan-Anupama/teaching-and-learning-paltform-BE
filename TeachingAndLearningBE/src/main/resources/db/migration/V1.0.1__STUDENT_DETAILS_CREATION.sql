@@ -10,7 +10,8 @@ CREATE TABLE
         al_stream VARCHAR(255),
         ol_first_category VARCHAR(255),
         ol_second_category VARCHAR(255),
-        ol_third_category VARCHAR(255)
+        ol_third_category VARCHAR(255),
+        password varchar(255)
     );
 
 CREATE SEQUENCE student_sign_up_seq INCREMENT BY 50;

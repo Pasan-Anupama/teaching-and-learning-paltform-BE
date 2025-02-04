@@ -14,7 +14,9 @@ CREATE TABLE
         commerce_subjects VARCHAR(255),
         art_subjects VARCHAR(255),
         technology_subjects VARCHAR(255),
-        ol_subjects VARCHAR(255)
+        ol_subjects VARCHAR(255),
+        password VARCHAR(255),
+        approval_state VARCHAR(12)   
     );
 
 CREATE SEQUENCE teacher_sign_up_seq INCREMENT BY 50;

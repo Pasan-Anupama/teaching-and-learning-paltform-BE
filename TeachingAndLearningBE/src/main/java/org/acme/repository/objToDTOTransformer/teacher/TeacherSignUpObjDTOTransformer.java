@@ -46,6 +46,8 @@ public class TeacherSignUpObjDTOTransformer {
         teacherSignUp.setArtSubjects(teacherSignupDetailsDTO.getArtSubjects());
         teacherSignUp.setTechnologySubjects(teacherSignupDetailsDTO.getTechnologySubjects());
         teacherSignUp.setOlSubjects(teacherSignupDetailsDTO.getOlSubjects());
+        teacherSignUp.setPassword(teacherSignupDetailsDTO.getPassword());
+        teacherSignUp.setApprovalStatus(teacherSignupDetailsDTO.getApprovalStatus());
 
         return teacherSignUp;
     }
@@ -74,6 +76,8 @@ public class TeacherSignUpObjDTOTransformer {
         teacherSignupDetailsDTO.setArtSubjects(teacherSignUp.getArtSubjects());
         teacherSignupDetailsDTO.setTechnologySubjects(teacherSignUp.getTechnologySubjects());
         teacherSignupDetailsDTO.setOlSubjects(teacherSignUp.getOlSubjects());
+        teacherSignupDetailsDTO.setPassword(teacherSignUp.getPassword());
+        teacherSignupDetailsDTO.setApprovalStatus(teacherSignUp.getApprovalStatus());
 
         return teacherSignupDetailsDTO;
     }

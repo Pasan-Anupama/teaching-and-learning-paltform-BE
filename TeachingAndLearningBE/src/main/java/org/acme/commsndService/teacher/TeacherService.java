@@ -11,6 +11,7 @@
 package org.acme.commsndService.teacher;
 
 import org.acme.common.dto.teacher.TeacherSignupDetailsDTO;
+import org.acme.common.enums.common.ApprovalStatus;
 import org.acme.repository.entities.teacher.TeacherSignUp;
 import org.acme.repository.objToDTOTransformer.teacher.TeacherSignUpObjDTOTransformer;
 import org.acme.repository.repository.teacher.TeacherRepository;
@@ -39,6 +40,8 @@ public class TeacherService {
      */
     @Transactional
     public String addTeacher(TeacherSignupDetailsDTO signupDetailsDTO) {
+        signupDetailsDTO.setApprovalStatus(ApprovalStatus.PENDING);
+        System.out.println("Approval State :::: " + signupDetailsDTO.getApprovalStatus());
         TeacherSignUp signUpDetails = TeacherSignUpObjDTOTransformer.dtoToEntityTransform(signupDetailsDTO);
 
         teacherRepository.persist(signUpDetails);

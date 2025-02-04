@@ -10,6 +10,8 @@
  */
 package org.acme.common.dto.teacher;
 
+import org.acme.common.enums.common.ApprovalStatus;
+
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
@@ -52,6 +54,8 @@ public class TeacherSignupDetailsDTO {
     private String artSubjects;
     private String technologySubjects;
     private String olSubjects;
+    private String password;
+    private ApprovalStatus approvalStatus;
 
     // S3 key data for certificate upload
 }
