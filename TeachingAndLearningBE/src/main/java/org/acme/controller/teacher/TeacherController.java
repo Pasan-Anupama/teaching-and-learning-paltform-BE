@@ -11,7 +11,7 @@
 package org.acme.controller.teacher;
 
 import org.acme.common.dto.teacher.TeacherSignupDetailsDTO;
-import org.acme.commsndService.teacher.TeacherService;
+import org.acme.commandService.teacher.TeacherService;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.POST;

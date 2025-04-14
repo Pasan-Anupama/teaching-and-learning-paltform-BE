@@ -8,7 +8,7 @@
  * Copyright(c) T & L Agency Pvt Ltd. All Rights Reserved.
  * This software is the proprietary information of T & L Agency Pvt Ltd.
  */
-package org.acme.commsndService.teacher;
+package org.acme.commandService.teacher;
 
 import org.acme.common.dto.teacher.TeacherSignupDetailsDTO;
 import org.acme.common.enums.common.ApprovalStatus;
@@ -41,7 +41,6 @@ public class TeacherService {
     @Transactional
     public String addTeacher(TeacherSignupDetailsDTO signupDetailsDTO) {
         signupDetailsDTO.setApprovalStatus(ApprovalStatus.PENDING);
-        System.out.println("Approval State :::: " + signupDetailsDTO.getApprovalStatus());
         TeacherSignUp signUpDetails = TeacherSignUpObjDTOTransformer.dtoToEntityTransform(signupDetailsDTO);
 
         teacherRepository.persist(signUpDetails);

@@ -11,7 +11,7 @@
 package org.acme.controller.student;
 
 import org.acme.common.dto.student.StudentSignUpDetailsDTO;
-import org.acme.commsndService.student.StudentService;
+import org.acme.commandService.student.StudentService;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.POST;

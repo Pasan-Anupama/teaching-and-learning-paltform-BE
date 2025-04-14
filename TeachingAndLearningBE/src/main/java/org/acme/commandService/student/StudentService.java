@@ -8,7 +8,7 @@
  * Copyright(c) T & L Agency Pvt Ltd. All Rights Reserved.
  * This software is the proprietary information of T & L Agency Pvt Ltd.
  */
-package org.acme.commsndService.student;
+package org.acme.commandService.student;
 
 import org.acme.common.dto.student.StudentSignUpDetailsDTO;
 import org.acme.repository.entities.student.StudentSignUp;
